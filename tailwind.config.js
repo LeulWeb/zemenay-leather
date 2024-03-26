@@ -5,7 +5,7 @@ export default withMT({
   theme: {
     extend: {},
     backgroundImage: {
-      "hero-background" : "url('./public/leather_bg.jpg')"
+      "hero-background" : "url('./public/brown_bg.jpg')"
     }
   },
   plugins: [],

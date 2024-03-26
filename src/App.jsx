@@ -7,7 +7,7 @@ import Contact from "./pages/Contact"
 
 const App = () => {
   return (
-    <div className=" min-h-screen flex flex-col overflow-x-hidden">
+    <div className=" min-h-screen flex flex-col overflow-x-hidden scroll-smooth">
       {/* <h1>Navbar</h1> */}
       <main className="flex-1">
         <Routes>
