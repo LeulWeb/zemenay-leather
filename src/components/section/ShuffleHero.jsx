@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
+// TODO: add more image on shuffle animation up to 16
 // image imports
 
 import a from "../../assets/images/a.jpg";
@@ -90,7 +91,6 @@ const squareData = [
     id: 9,
     src: i,
   },
-  
 ];
 
 const generateSquares = () => {

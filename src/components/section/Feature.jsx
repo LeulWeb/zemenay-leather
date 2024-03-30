@@ -1,7 +1,6 @@
 // import { FeatureCard } from "../UI/FeatureCard"
 
 import { Typography } from "@material-tailwind/react";
-import bag from "../../assets/images/two_bag_remove_bg.png";
 
 // icons
 

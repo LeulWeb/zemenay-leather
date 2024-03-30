@@ -18,7 +18,8 @@ export default withMT({
       
     },
     backgroundImage: {
-      "hero-background" : "url('./brown_bg.jpg')"
+      "hero-background" : "url('./brown_bg.jpg')",
+      "bag-1": "url('./two_bag_remove_bg.png')"
     }
   },
   plugins: [],

@@ -1,6 +1,8 @@
+
+
 import { ContactForm } from "../components/section/ContactSection"
 import Feature from "../components/section/Feature"
-import Hero from "../components/section/Hero"
+
 import ProductsSection from "../components/section/ProductsSection"
 import ShuffleHero from "../components/section/ShuffleHero"
 
@@ -11,7 +13,7 @@ const Home = () => {
         {/* <Hero/> */}
         <ShuffleHero/>
         <Feature/>
-        {/* <ProductsSection/> */}
+        <ProductsSection/>
         <ContactForm/>
     </div>
   )

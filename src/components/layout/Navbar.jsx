@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-
+import { Link } from "react-router-dom";
 
 function NavList() {
   return (
@@ -18,12 +18,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium text-black"
       >
-        <a
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Products
-        </a>
+        <Link to="/product">Products</Link>
       </Typography>
       <Typography
         as="li"
@@ -31,12 +26,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium text-black"
       >
-        <a
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          About Us
-        </a>
+        <Link to="/about">About</Link>
       </Typography>
       <Typography
         as="li"
@@ -44,14 +34,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium text-black"
       >
-        <a
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Contact Us
-        </a>
+        <Link to="/contact">Contact Us</Link>
       </Typography>
-    
     </ul>
   );
 }
@@ -84,7 +68,9 @@ export function NavbarLayout() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-          Zemenay
+          <Link to="/">
+            Zemenay
+          </Link>
         </Typography>
 
         {/* <img src={logo} alt="" className="w-40 h-40" /> */}
