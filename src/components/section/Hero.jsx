@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-hero-background bg-cover flex flex-col items-center justify-center text-white">
+    <div className="w-screen h-screen bg-hero-background  bg-cover flex flex-col items-center justify-center text-white">
       <div className="flex-grow"></div>
 
       <section className="flex items-center justify-between w-10/12 mx-auto">

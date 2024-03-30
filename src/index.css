@@ -16,3 +16,11 @@
     z-index: 1;
    }
    
+
+
+/*  tailwind variables */
+
+.primary_color{
+    @apply bg-[#964B00]
+}
+

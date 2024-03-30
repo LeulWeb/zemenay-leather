@@ -3,9 +3,22 @@ import withMT from "@material-tailwind/react/utils/withMT";
 export default withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: [
+        "Poppins",
+        "Helvetica",
+        "Arial",
+        "sans-serif",
+      ],
+    },
+    extend: {
+      colors:{
+        "primary": "#964B00"
+      },
+      
+    },
     backgroundImage: {
-      "hero-background" : "url('./public/brown_bg.jpg')"
+      "hero-background" : "url('./brown_bg.jpg')"
     }
   },
   plugins: [],

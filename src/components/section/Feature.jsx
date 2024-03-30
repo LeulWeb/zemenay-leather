@@ -6,57 +6,50 @@ import bag from "../../assets/images/two_bag_remove_bg.png";
 // icons
 
 import { SlBadge } from "react-icons/sl";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { IoShieldOutline } from "react-icons/io5";
 
 const Feature = () => {
   return (
-    <div className="w-full  text-center py-7">
+    <div className="w-full bg-gray-100 text-center py-7">
       <section className="w-10/12 mx-auto">
-        <Typography variant="h3" className="py-5">
+        <Typography variant="h3" className="py-5 text-primary">
           Features
         </Typography>
-        {/* <Typography variant="paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore velit
-          vel magnam. Eum commodi, mollitia deserunt sed qui id ab ipsum cum
-          atque facilis possimus ex, asperiores harum quam repudiandae.
-        </Typography> */}
 
         {/* section */}
 
         <div className=" w-full grid md:grid-cols-3 py-5">
           <div className=" text-center flex items-center justify-center flex-col p-5">
-            <SlBadge size={50} />
-            <Typography variant="h4" className="py-5">
-              Quality
+            <SlBadge size={32} className="text-primary" />
+            <Typography variant="h6" className="py-5">
+              Quality Materials
             </Typography>
             <Typography variant="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              obcaecati consequatur autem, saepe aliquid eaque magni rem dolore
-              nostrum. Tempore totam optio nesciunt reprehenderit iure adipisci
-              est molestias eos aspernatur!
+              Our bags are meticulously crafted using the finest materials,
+              guaranteeing durability, elegance, and a touch of luxury.
             </Typography>
           </div>
           <div className=" text-center flex items-center justify-center flex-col p-5">
-            <SlBadge size={50} />
-            <Typography variant="h4" className="py-5">
-              Quality
+            <MdOutlineDesignServices size={32} className="text-primary" />
+            <Typography variant="h6" className="py-5">
+              Variety Designs
             </Typography>
             <Typography variant="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              obcaecati consequatur autem, saepe aliquid eaque magni rem dolore
-              nostrum. Tempore totam optio nesciunt reprehenderit iure adipisci
-              est molestias eos aspernatur!
+              Discover a wide array of designs, from classic to contemporary,
+              ensuring there&apos;s a perfect bag for every individual style and
+              occasion.
             </Typography>
           </div>
           <div className=" text-center flex items-center justify-center flex-col p-5">
-            <SlBadge size={50} />
-            <Typography variant="h4" className="py-5">
-              Quality
+            <IoShieldOutline size={32} className="text-primary" />
+            <Typography variant="h6" className="py-5">
+              Durability
             </Typography>
             <Typography variant="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              obcaecati consequatur autem, saepe aliquid eaque magni rem dolore
-              nostrum. Tempore totam optio nesciunt reprehenderit iure adipisci
-              est molestias eos aspernatur!
+              Engineered for resilience, our bags boast robust construction and
+              premium materials, promising longevity and reliability for all
+              your adventures.
             </Typography>
           </div>
         </div>
