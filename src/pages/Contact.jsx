@@ -9,75 +9,23 @@ import {
 // import icons
 import { IoCallOutline } from "react-icons/io5";
 import { ContactForm } from "../components/section/ContactSection";
+import { Hover } from "../components/UI/Hover";
 
 const Contact = () => {
   return (
     <main>
-      <section className="bg-hero-background w-screen min-h-72 flex items-center justify-center ">
-        <div className="text-white text-center  py-5">
-          <Typography variant="h1" className="my-5">
-            Contact Us
-          </Typography>
-          <Typography className="py-5" variant="lead">
-            We&apos;d love to hear from you!
-          </Typography>
-
-          {/* address and info */}
-
-          <section className="w-screen my-5 ">
-            <div className="flex flex-col md:flex-row space justify-between w-8/12 mx-auto  ">
-              {/* phone */}
-              <div className="flex flex-col items-center space-x-3">
-                <div className="flex items-center space-x-3">
-                  <IoCallOutline size={20} />{" "}
-                  <Typography className="text-white" variant="h6">
-                    Phone
-                  </Typography>
-                </div>
-                <div>
-                  <Typography className="text-white" variant="h4">
-                    +234 803 123 4567
-                  </Typography>
-                </div>
-              </div>
-
-              {/*  */}
-
-              <div className="flex flex-col items-center space-x-3">
-                <div className="flex items-center space-x-3">
-                  <IoCallOutline size={20} />{" "}
-                  <Typography className="text-white" variant="h6">
-                    Phone
-                  </Typography>
-                </div>
-                <div>
-                  <Typography className="text-white" variant="h4">
-                    +234 803 123 4567
-                  </Typography>
-                </div>
-              </div>
-
-              {/*  */}
-              <div className="flex flex-col items-center space-x-3">
-                <div className="flex items-center space-x-3">
-                  <IoCallOutline size={20} />{" "}
-                  <Typography className="text-white" variant="h6">
-                    Phone
-                  </Typography>
-                </div>
-                <div>
-                  <Typography className="text-white" variant="h4">
-                    +234 803 123 4567
-                  </Typography>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
+      <section className="w-screen ">
+        <Hover />
       </section>
+
       {/* TODO: remove animejs and replace orginal address  */}
       <section className="text-primary bg-gray-100  w-screen  ">
         <ContactForm />
+      </section>
+
+      {/* map */}
+      <section>
+        <MapLocation />
       </section>
     </main>
   );
@@ -129,5 +77,23 @@ export const ContactUsForm = () => {
         </Button>
       </form>
     </Card>
+  );
+};
+
+export const MapLocation = () => {
+  const mapSrc =
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509603!2d144.95373531531592!3d-37.81720997975174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e9!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1633076766489!5m2!1sen!2sus";
+
+  return (
+    <div>
+      <iframe
+        height="450"
+        width="100%"
+        style={{ border: 0 }}
+        loading="lazy"
+        allowFullScreen
+        src={mapSrc}
+      ></iframe>
+    </div>
   );
 };

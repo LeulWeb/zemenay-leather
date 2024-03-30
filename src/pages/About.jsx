@@ -1,9 +1,11 @@
-
-
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  return <main>
+    <section>
+       <main className="w-10/12 ">
 
-export default About
+       </main>
+    </section>
+  </main>;
+};
+
+export default About;

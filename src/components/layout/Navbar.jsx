@@ -8,6 +8,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo/Zemenay_final_logo_svg-08.png";
 
 function NavList() {
   return (
@@ -20,14 +21,14 @@ function NavList() {
       >
         <Link to="/product">Products</Link>
       </Typography>
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-medium text-black"
       >
         <Link to="/about">About</Link>
-      </Typography>
+      </Typography> */}
       <Typography
         as="li"
         variant="small"
@@ -59,21 +60,14 @@ export function NavbarLayout() {
       fullWidth={true}
       blurred={false}
       // style={{ border: 0, borderRadius: 0, background: "transparent" }}
-      className=" mx-auto px-6 py-3  bg-transparent"
+      className=" mx-auto px-6   bg-transparent"
     >
       <div className="flex w-10/12 mx-auto items-center justify-between text-black rounded-none ">
-        <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
-        >
-          <Link to="/">
-            Zemenay
-          </Link>
-        </Typography>
-
-        {/* <img src={logo} alt="" className="w-40 h-40" /> */}
+        <Link to="/">
+          <div>
+            <img src={logo} alt="logo" className="w-32 mx-auto"></img>
+          </div>
+        </Link>
 
         <div className="hidden lg:block">
           <NavList />

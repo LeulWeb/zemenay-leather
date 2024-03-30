@@ -1,35 +1,24 @@
 import { useAnimate } from "framer-motion";
 import { useRef } from "react";
-import { FiMousePointer } from "react-icons/fi";
+import { FiPhoneCall } from "react-icons/fi";
 
-export const Pattern = () => {
+import a from "../../assets/images/a.jpg";
+import b from "../../assets/images/b.jpg";
+import c from "../../assets/images/photo_2024-03-26_23-58-04.jpg";
+import d from "../../assets/images/photo_2024-03-26_23-57-55.jpg";
+import e from "../../assets/images/photo_2024-03-26_23-57-59.jpg";
+
+export const Hover = () => {
   return (
     <MouseImageTrail
       renderImageBuffer={50}
       rotationRange={25}
-      images={[
-        "/imgs/active/1.jpg",
-        "/imgs/active/2.jpg",
-        "/imgs/active/3.jpg",
-        "/imgs/active/4.jpg",
-        "/imgs/active/5.jpg",
-        "/imgs/active/6.jpg",
-        "/imgs/active/7.jpg",
-        "/imgs/active/8.jpg",
-        "/imgs/active/9.jpg",
-        "/imgs/active/10.jpg",
-        "/imgs/active/11.jpg",
-        "/imgs/active/12.jpg",
-        "/imgs/active/13.jpg",
-        "/imgs/active/14.jpg",
-        "/imgs/active/15.jpg",
-        "/imgs/active/16.jpg",
-      ]}
+      images={[a, b, c, d, e]}
     >
-      <section className="grid h-screen w-full place-content-center bg-white">
+      <section className="grid h-[30vh] w-full place-content-center bg-white">
         <p className="flex items-center gap-2 text-3xl font-bold uppercase text-black">
-          <FiMousePointer />
-          <span>Hover me</span>
+          <FiPhoneCall />
+          <span>Contact Us</span>
         </p>
       </section>
     </MouseImageTrail>
