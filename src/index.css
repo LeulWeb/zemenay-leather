@@ -23,4 +23,7 @@
 .primary_color{
     @apply bg-[#964B00]
 }
+.secondary_color{
+    @apply bg-[#e3bc9a]
+}
 

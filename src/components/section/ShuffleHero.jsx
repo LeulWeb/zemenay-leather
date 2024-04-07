@@ -1,19 +1,27 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
+import { FiPhoneCall } from "react-icons/fi";
+
 // TODO: add more image on shuffle animation up to 16
 // image imports
 
-import a from "../../assets/images/a.jpg";
-import b from "../../assets/images/b.jpg";
-import c from "../../assets/images/photo_2024-03-26_23-58-04.jpg";
-import d from "../../assets/images/photo_2024-03-26_23-57-55.jpg";
-import e from "../../assets/images/photo_2024-03-26_23-57-59.jpg";
-import f from "../../assets/images/photo_2024-03-26_23-57-45.jpg";
-import g from "../../assets/images/photo_2024-03-26_23-57-04.jpg";
-import h from "../../assets/images/photo_2024-03-26_23-57-05.jpg";
-import i from "../../assets/images/photo_2024-03-26_23-57-12.jpg";
-import j from "../../assets/images/one-brown-back-bag-removebg-preview.png";
+import one from "../../assets/transparent_bg_product/1.png";
+import two from "../../assets/transparent_bg_product/2.png";
+import three from "../../assets/transparent_bg_product/19.png";
+import four from "../../assets/transparent_bg_product/4.png";
+import five from "../../assets/transparent_bg_product/5.png";
+import six from "../../assets/transparent_bg_product/6.png";
+import seven from "../../assets/transparent_bg_product/7.png";
+import eight from "../../assets/transparent_bg_product/8.png";
+import nine from "../../assets/transparent_bg_product/9.png";
+import ten from "../../assets/transparent_bg_product/10.png";
+import eleven from "../../assets/transparent_bg_product/11.png";
+import twelve from "../../assets/transparent_bg_product/12.png";
+import thirteen from "../../assets/transparent_bg_product/21.png";
+import fourteen from "../../assets/transparent_bg_product/20.png";
+import fifteen from "../../assets/transparent_bg_product/15.png";
+import sixteen from "../../assets/transparent_bg_product/16.png";
 
 import logo from "../../assets/logo/Zemenay_final_logo_svg-08.png";
 
@@ -28,12 +36,16 @@ const ShuffleHero = () => {
           <img src={logo} alt="logo" className="w-52"></img>
         </div>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-          error repellat voluptatibus ad.
+          "Indulge in Timeless Elegance with Zemenay Leather - Where Quality
+          Meets Craftsmanship."
         </p>
-        <button className="bg-primary text-white font-medium py-2 px-4 rounded transition-all  active:scale-95">
-          Contact Us
-        </button>
+        <a href="tel:+25192 192 3881">
+          <button className="bg-primary text-white font-medium py-2 px-4 rounded transition-all  active:scale-95">
+            <div className="flex items-center space-x-3">
+              <div>Call Us</div> <FiPhoneCall />
+            </div>
+          </button>
+        </a>
       </div>
       <ShuffleGrid />
     </section>
@@ -60,63 +72,67 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: a,
+    src: one,
   },
   {
     id: 2,
-    src: b,
+    src: two,
   },
   {
     id: 3,
-    src: c,
+    src: three,
   },
   {
     id: 4,
-    src: j,
+    src: four,
   },
   {
     id: 5,
-    src: e,
+    src: five,
   },
   {
     id: 6,
-    src: f,
+    src: six,
   },
   {
     id: 7,
-    src: g,
+    src: seven,
   },
   {
     id: 8,
-    src: h,
+    src: eight,
   },
   {
     id: 9,
-    src: i,
+    src: nine,
   },
   {
     id: 10,
-    src: i,
+    src: ten,
   },
   {
     id: 11,
-    src: i,
+    src: eleven,
   },
   {
     id: 12,
-    src: i,
+    src: twelve,
   },
   {
     id: 13,
-    src: i,
+    src: thirteen,
   },
   {
     id: 14,
-    src: d,
+    src: fourteen,
   },
   {
     id: 15,
-    src: i,
+    src: fifteen,
+  },
+  {
+    id: 16,
+    src: sixteen,
   },
 ];
 
@@ -126,7 +142,7 @@ const generateSquares = () => {
       key={sq.id}
       layout
       transition={{ duration: 1.5, type: "spring" }}
-      className="w-full h-full"
+      className="w-full h-full bg-center"
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
@@ -152,7 +168,7 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1 ">
       {squares.map((sq) => sq)}
     </div>
   );

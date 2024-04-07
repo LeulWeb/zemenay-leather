@@ -1,91 +1,42 @@
+import one from "../../assets/transparent_bg_product/1.png";
+import two from "../../assets/transparent_bg_product/2.png";
+import three from "../../assets/transparent_bg_product/19.png";
+import four from "../../assets/transparent_bg_product/4.png";
+import five from "../../assets/transparent_bg_product/5.png";
+import six from "../../assets/transparent_bg_product/6.png";
+import seven from "../../assets/transparent_bg_product/7.png";
+import eight from "../../assets/transparent_bg_product/8.png";
+import nine from "../../assets/transparent_bg_product/9.png";
+import ten from "../../assets/transparent_bg_product/10.png";
+import eleven from "../../assets/transparent_bg_product/11.png";
+import twelve from "../../assets/transparent_bg_product/12.png";
+import thirteen from "../../assets/transparent_bg_product/21.png";
+import fourteen from "../../assets/transparent_bg_product/20.png";
+import fifteen from "../../assets/transparent_bg_product/15.png";
+import sixteen from "../../assets/transparent_bg_product/16.png";
+import ProductCard from "./ProductCard";
+
 export function Gallery() {
-    return (
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center "
-              src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center "
-              src="https://docs.material-tailwind.com/img/team-3.jpg"
-              alt="gallery-photo"
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center "
-              src="https://docs.material-tailwind.com/img/team-3.jpg"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg object-cover object-center"
-              src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
-              alt="gallery-photo"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
+  return (
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
+      
+        <ProductCard image={one} />
+        <ProductCard image={two} />
+        <ProductCard image={three} />
+        <ProductCard image={four} />
+        <ProductCard image={one} />
+        <ProductCard image={two} />
+        <ProductCard image={three} />
+        <ProductCard image={four} />
+        <ProductCard image={one} />
+        <ProductCard image={two} />
+        <ProductCard image={three} />
+        <ProductCard image={four} />
+        <ProductCard image={one} />
+        <ProductCard image={two} />
+        <ProductCard image={three} />
+        <ProductCard image={four} />
+      
+    </div>
+  );
+}

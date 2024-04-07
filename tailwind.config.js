@@ -15,7 +15,8 @@ export default withMT({
     },
     extend: {
       colors:{
-        "primary": "#964B00"
+        "primary": "#964B00",
+        'secondary': "#e3bc9a"
       },
       fontFamily:{
          'athena': ['Athena of the Ocean', 'serif'],

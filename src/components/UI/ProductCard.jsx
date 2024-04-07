@@ -10,10 +10,10 @@ import {
 import a from "../../assets/images/one-brown-back-bag-removebg-preview.png";
 import { Typography } from "@material-tailwind/react";
 import { Chip } from "@material-tailwind/react";
-const ProductCard = () => {
+const ProductCard = ( {image } ) => {
   return (
     <div className="grid w-full place-content-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
-      <TiltCard />
+      <TiltCard image={image} />
     </div>
   );
 };
@@ -21,7 +21,7 @@ const ProductCard = () => {
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const TiltCard = () => {
+const TiltCard = ({image}) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -73,18 +73,19 @@ const TiltCard = () => {
         }}
         className="absolute inset-4  grid place-content-center rounded-xl bg-white"
       >
-        <img src={a} className="bg-cover w-full h-full " alt="" />
+        <img src={image} className="bg-cover w-full h-full " alt="" />
         <Typography variant="lead" className="text-center">
           Leather Bag
         </Typography>
         <Typography variant="small" className="text-center">
           High Quality hand crafted leather
         </Typography>
+
         <div className="flex justify-end w-10/12 pt-5">
           <Chip
             value="pure leather"
             size="sm"
-            className="w-fit bg-primary"
+            className="w-fit bg-secondary"
           ></Chip>
         </div>
       </div>
